@@ -1,0 +1,96 @@
+﻿<Window x:Class="RoastChat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RoastChat"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="172*"/>
+            <RowDefinition Height="251*"/>
+        </Grid.RowDefinitions>
+        <Label Content="RoastChat" HorizontalAlignment="Left" VerticalAlignment="Top" Height="62" Width="319" FontSize="36" Uid="labelRoastChat"/>
+
+
+        <Button x:Name="btnSend" Click="Button_Click" Content="Send" HorizontalAlignment="Left" Margin="700,194,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Height="23" Uid="btnSend"/>
+        <TextBox x:Name="messageInput" HorizontalAlignment="Left" Height="23" Margin="389,194,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Melding" VerticalAlignment="Top" Width="306" RenderTransformOrigin="0.234,0.294" Uid="messageInput" KeyDown="textBoxKeyDown"/>
+        <TextBox x:Name="txtBoxLoginUser" HorizontalAlignment="Left" Height="23" Margin="14,104,0,0" TextWrapping="Wrap" Text="ABC123" VerticalAlignment="Top" Width="156" RenderTransformOrigin="0.234,0.294" Uid="txtBoxLoginUser">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.06"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label Content="Login" HorizontalAlignment="Left" Margin="10,49,0,0" VerticalAlignment="Top" Height="36" Width="319" FontSize="20"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top" Height="36" Width="319" FontSize="14"/>
+        <TextBox x:Name="txtBoxLoginPassword" HorizontalAlignment="Left" Height="23" Margin="14,161,0,0" TextWrapping="Wrap" Text="*****" VerticalAlignment="Top" Width="156" RenderTransformOrigin="0.234,0.294"  Grid.RowSpan="2" Uid="txtBoxLoginPassword">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.06"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Height="36" Width="319" FontSize="14"/>
+        <Button x:Name="btnLogin" Click="Button_Click" Content="Login" HorizontalAlignment="Left" Margin="10,29,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-3.298,-5.683" Uid="btnLogin"/>
+        <TextBox x:Name="txtBoxCreateUserName" HorizontalAlignment="Left" Height="23" Margin="14,106,0,0" TextWrapping="Wrap" Text="ABC123" VerticalAlignment="Top" Width="156" RenderTransformOrigin="0.234,0.294" Grid.Row="1" Uid="txtBoxCreateUserName">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.06"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label Content="Create Account" HorizontalAlignment="Left" Margin="10,51,0,0" VerticalAlignment="Top" Height="35" Width="319" FontSize="20" Grid.Row="1"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" Height="36" Width="319" FontSize="14" Grid.Row="1"/>
+        <TextBox x:Name="txtBoxCreateUserPassword" HorizontalAlignment="Left" Height="23" Margin="14,163,0,0" TextWrapping="Wrap" Text="*****" VerticalAlignment="Top" Width="156" RenderTransformOrigin="0.234,0.294" Grid.Row="1"  Uid="txtBoxCreateUserPassword">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.06"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="10,136,0,0" VerticalAlignment="Top" Height="36" Width="319" FontSize="14" Grid.Row="1"/>
+        <Button x:Name="btnCreateUser" Click="Button_Click" Content="Create" HorizontalAlignment="Left" Margin="10,202,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-3.298,-5.683" Uid="btnCreateUser"/>
+        <Label Content="Current Login:" HorizontalAlignment="Left" Margin="194,13,0,0" VerticalAlignment="Top" Height="36" Width="319" FontSize="14"/>
+        <Label x:Name="labelCurrentUsername" Content="Username:" HorizontalAlignment="Left" Margin="195,36,0,0" VerticalAlignment="Top" Height="36" Width="319" FontSize="14" Uid="labelCurrentUser"/>
+        <Button x:Name="btnLogOut" Click="Button_Click" Content="Log Out" HorizontalAlignment="Left" Margin="201,77,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-3.298,-5.683" Uid="btnLogOut"/>
+        <Button x:Name="btnChangeToPassword" Click="Button_Click" Content="Change Password" HorizontalAlignment="Left" Margin="198,51,0,0" VerticalAlignment="Top" Width="124" RenderTransformOrigin="-3.298,-5.683" Grid.Row="1" Height="23" Uid="btnChangeToPassword"/>
+        <TextBox x:Name="txtBoxCurrentPassword" HorizontalAlignment="Left" Height="23" Margin="199,132,0,0" TextWrapping="Wrap" Text="*****" VerticalAlignment="Top" Width="156" RenderTransformOrigin="0.234,0.294" Uid="txtBoxCurrentPassword">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.06"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label Content="Current Password" HorizontalAlignment="Left" Margin="195,105,0,0" VerticalAlignment="Top" Height="36" Width="319" FontSize="14"/>
+        <TextBox x:Name="txtBoxChangeToPassword" HorizontalAlignment="Left" Height="23" Margin="199,17,0,0" TextWrapping="Wrap" Text="*****" VerticalAlignment="Top" Width="156" RenderTransformOrigin="0.234,0.294"  Grid.Row="1" Uid="txtBoxChangeToPassword">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.06"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="195,162,0,0" VerticalAlignment="Top" Height="36" Width="319" FontSize="14" Grid.RowSpan="2"/>
+        <TextBox x:Name="chatBox" HorizontalAlignment="Left" Height="325" Margin="389,19,0,0" TextWrapping="Wrap" Text="TxtBox" VerticalAlignment="Top" Width="386" Grid.RowSpan="2" />
+
+    </Grid>
+</Window>

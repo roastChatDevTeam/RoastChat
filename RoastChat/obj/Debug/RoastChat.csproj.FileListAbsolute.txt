@@ -1,0 +1,15 @@
+C:\Users\amira\source\repos\RoastChat\RoastChat\bin\Debug\RoastChat.exe.config
+C:\Users\amira\source\repos\RoastChat\RoastChat\bin\Debug\RoastChat.exe
+C:\Users\amira\source\repos\RoastChat\RoastChat\bin\Debug\RoastChat.pdb
+C:\Users\amira\source\repos\RoastChat\RoastChat\obj\Debug\RoastChat.csprojAssemblyReference.cache
+C:\Users\amira\source\repos\RoastChat\RoastChat\obj\Debug\MainWindow.g.cs
+C:\Users\amira\source\repos\RoastChat\RoastChat\obj\Debug\App.g.cs
+C:\Users\amira\source\repos\RoastChat\RoastChat\obj\Debug\RoastChat_MarkupCompile.cache
+C:\Users\amira\source\repos\RoastChat\RoastChat\obj\Debug\RoastChat_MarkupCompile.lref
+C:\Users\amira\source\repos\RoastChat\RoastChat\obj\Debug\MainWindow.baml
+C:\Users\amira\source\repos\RoastChat\RoastChat\obj\Debug\RoastChat.g.resources
+C:\Users\amira\source\repos\RoastChat\RoastChat\obj\Debug\RoastChat.Properties.Resources.resources
+C:\Users\amira\source\repos\RoastChat\RoastChat\obj\Debug\RoastChat.csproj.GenerateResource.cache
+C:\Users\amira\source\repos\RoastChat\RoastChat\obj\Debug\RoastChat.csproj.CoreCompileInputs.cache
+C:\Users\amira\source\repos\RoastChat\RoastChat\obj\Debug\RoastChat.exe
+C:\Users\amira\source\repos\RoastChat\RoastChat\obj\Debug\RoastChat.pdb
